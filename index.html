@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بورتفوليو صانع الفيديوهات الاحترافي | Video Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="معرض أعمال وموقع بورتفوليو سينمائي لعرض واستعراض الفيديوهات المرفوعة على جوجل درايف وفيس بوك ويوتيوب بدقة عالية ونظام فلترة ذكي.">
+  <meta name="keywords" content="مونتاج, فيديوهات, Google Drive, Vercel, بورتفوليو, صناعة المحتوى, يوتيوب, Video Editor, Showreel">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Background Lights -->
+  <div class="ambient-bg">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="brand-logo">
+        <div class="brand-icon">
+          <i class="fa-solid fa-play"></i>
+        </div>
+        <div class="brand-text">معرض <span>الفيديوهات</span></div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#showcase" class="nav-link active">الأعمال والمشاريع</a></li>
+          <li><a href="#contact" class="nav-link">تواصل معي</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/201108133798?text=مرحباً%20أود%20طلب%20فيديو%20جديد" target="_blank" class="btn btn-primary" style="background: #25D366; color: #fff; box-shadow: 0 0 15px rgba(37, 211, 102, 0.4);">
+          <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i>
+          طلب فيديو عبر الواتساب
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="badge-dot"></span>
+            متاح لاستلام مشاريع مونتاج وفيديوهات جديدة
+          </div>
+
+          <h1 class="hero-title">
+            أصنع <span>مشاهد سينمائية</span> وفيديوهات تخطف الأبصار
+          </h1>
+
+          <p class="hero-subtitle">
+            مرحباً بك في بورتفوليو أعمالي الشخصي. هنا تجد تجميعة لأقوى الأعمال والإعلانات والفيديوهات بجودة فائقة السرعة وأسلوب إخراجي متميز.
+          </p>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
+            <a href="#showcase" class="btn btn-primary">
+              <i class="fa-solid fa-film"></i>
+              تصفح جميع الفيديوهات
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-brands fa-whatsapp" style="color: #25D366;"></i>
+              طلب فيديو جديد
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-value" id="statVideoCount">8+</span>
+              <span class="stat-label">فيديو معروض</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">100%</span>
+              <span class="stat-label">احترافية المونتاج</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">4K</span>
+              <span class="stat-label">دقة العرض السينمائية</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Creator Profile Media Card -->
+        <div class="hero-media">
+          <div class="creator-card">
+            <div class="creator-img-wrapper">
+              <img src="./assets/creator.jpg" alt="صانع المحتوى">
+              <div class="creator-overlay">
+                <span class="creator-tag">صانع محتوى ومحرر فيديوهات سينمائي</span>
+                <h3 class="creator-name">معرض الأعمال الشخصية</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Showcase Video Grid Section -->
+  <section class="section" id="showcase">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">معرض الأعمال المميزة</span>
+        <h2 class="section-title">فيديوهات سينمائية وإعلانات</h2>
+        <p class="section-subtitle">اضغط على أي فيديو لمشاهدته فوراً على منصته الأصلية (Google Drive / Facebook / YouTube).</p>
+      </div>
+
+      <!-- Filter Controls & Search -->
+      <div class="filter-wrapper">
+        
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="searchInput" class="search-input" placeholder="ابحث باسم الفيديو، الكلمات المفتاحية، أو نوع التعديل...">
+        </div>
+
+        <div class="categories-pills" id="categoryPills">
+          <!-- Dynamic Category Pills Rendered by JS -->
+        </div>
+
+      </div>
+
+      <!-- Video Grid Container -->
+      <div class="video-grid" id="videoGrid">
+        <!-- Dynamic Video Cards Rendered by JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact & Collaboration Section -->
+  <section class="section" id="contact" style="background: var(--bg-secondary);">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">دعنا نعمل معاً</span>
+        <h2 class="section-title">هل لديك مشروع فيديو جديد؟</h2>
+        <p class="section-subtitle">اضغط على زر الواتساب أدناه للتواصل المباشر وطلب مشروع فيديو جديد.</p>
+      </div>
+
+      <div class="contact-card">
+        
+        <!-- Primary Direct WhatsApp Action Button -->
+        <a href="https://wa.me/201108133798?text=مرحباً%20أود%20طلب%20فيديو%20جديد" target="_blank" class="btn btn-whatsapp" style="width: 100%; font-size: 1.15rem; padding: 1.15rem; background: #25D366; color: #fff; box-shadow: 0 0 25px rgba(37, 211, 102, 0.4); text-decoration: none; border-radius: var(--radius-full); font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 0.8rem; margin-bottom: 2rem; transition: var(--transition-fast);">
+          <i class="fa-brands fa-whatsapp" style="font-size: 1.6rem;"></i>
+          مراسلة لطلب فيديو عبر الواتساب (01108133798)
+        </a>
+
+        <div style="text-align: center; margin-bottom: 1.5rem; color: var(--text-dim); font-size: 0.9rem; font-weight: 700;">
+          أو يمكنك إرسال رسالة مباشرة من نموذج التواصل أدناه:
+        </div>
+
+        <form id="contactForm" onsubmit="event.preventDefault(); window.open('https://wa.me/201108133798?text=' + encodeURIComponent('الاسم: ' + document.getElementById('contactName').value + '\nنوع الفيديو: ' + document.getElementById('contactSubject').value + '\nالرسالة: ' + document.getElementById('contactMessage').value), '_blank'); this.reset();">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="contactName">الاسم الكامل</label>
+              <input type="text" id="contactName" class="form-input" placeholder="مثال: أحمد محمود" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">البريد الإلكتروني / رقم الهاتف</label>
+              <input type="text" id="contactEmail" class="form-input" placeholder="رقم الهاتف أو الايميل" required>
+            </div>
+            <div class="form-group full-width">
+              <label for="contactSubject">نوع الخدمة / مشروع الفيديو</label>
+              <input type="text" id="contactSubject" class="form-input" placeholder="مثال: مونتاج إعلان تجاري، تعديل فيديو يوتيوب...">
+            </div>
+            <div class="form-group full-width">
+              <label for="contactMessage">تفاصيل الرسالة</label>
+              <textarea id="contactMessage" class="form-textarea" placeholder="اكتب تفاصيل المشروع، الميزانية المتوقعة، أو روابط الفيديوهات..." required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <i class="fa-brands fa-whatsapp"></i>
+            إرسال الرسالة إلى الواتساب
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="https://wa.me/201108133798" target="_blank" class="social-link" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://youtube.com" target="_blank" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://facebook.com" target="_blank" class="social-link" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://drive.google.com" target="_blank" class="social-link" title="Google Drive"><i class="fa-brands fa-google-drive"></i></a>
+      </div>
+      <p>© 2026 جميع الحقوق محفوظة | بورتفوليو الفيديوهات جاهز للنشر المجاني على <strong>Vercel</strong></p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Standalone & Module Compatible JavaScript -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
