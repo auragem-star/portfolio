@@ -8,6 +8,20 @@
 // --------------------------------------------------------------------------
 const INITIAL_VIDEOS = [
   {
+    id: "v0000",
+    title: "إعلان شوكولاتة 🍫",
+    description: "إعلان تجاري وترويجي جذاب لمنتج شوكولاتة فاخر بأسلوب مونتاج وإخراج سينمائي حديث.",
+    category: "commercial",
+    type: "drive",
+    driveUrl: "https://drive.google.com/file/d/16lb0Jf36AkhN_u41mTlA_HORpxg8UaiS/view?usp=sharing",
+    thumbnail: "",
+    duration: "01:15",
+    views: "جديد",
+    date: "أغسطس 2026",
+    tags: ["إعلان_شوكولاتة", "إعلان_تجاري", "Commercial"],
+    featured: true
+  },
+  {
     id: "v000",
     title: "حين كانت القاهرة تتكلم 🏛️",
     description: "فيديو وثائقي سينمائي مميز يستعرض تاريخ وسحر مدينة القاهرة بأسلوب إخراجي ومونتاج ساحر.",
@@ -137,9 +151,9 @@ const INITIAL_VIDEOS = [
 
 const CATEGORIES = [
   { id: "all", label: "🔥 جميع الأعمال" },
+  { id: "commercial", label: "📺 إعلانات وتجارية" },
   { id: "showreel", label: "🎬 شو ريل (Showreels)" },
   { id: "social", label: "📱 فيس بوك وسوشيال" },
-  { id: "commercial", label: "⚽ الزمالك وفيوري" },
   { id: "vlog", label: "📸 مشاريع سينمائية" },
   { id: "tutorials", label: "📜 فيديوهات تاريخية" }
 ];
