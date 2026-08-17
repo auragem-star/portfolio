@@ -6,6 +6,20 @@
 
 export const INITIAL_VIDEOS = [
   {
+    id: "v000",
+    title: "مشروع فيديو سينمائي جديد - Google Drive 🎬",
+    description: "إنتاج ومونتاج فيديو مميز مضاف حديثاً بأعلى معايير الإضاءة والصوت والمؤثرات البصرية.",
+    category: "showreel",
+    type: "drive",
+    driveUrl: "https://drive.google.com/file/d/1B9EZiVjc0REyzNVqe_h124RmPPT2xdDT/view?usp=drive_link",
+    thumbnail: "",
+    duration: "02:20",
+    views: "جديد",
+    date: "أغسطس 2026",
+    tags: ["GoogleDrive", "New", "مونتاج_سينمائي"],
+    featured: true
+  },
+  {
     id: "v00",
     title: "ماذا لو كنت آخر إنسان على وجه الأرض؟ 🌍",
     description: "فيديو فكري وتخيلي مشوق يستعرض سيناريو ماذا سيحدث لو أصبحت آخر إنسان يعيش على كوكب الأرض.",
