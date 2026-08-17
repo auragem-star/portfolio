@@ -9,8 +9,8 @@
 const INITIAL_VIDEOS = [
   {
     id: "v000",
-    title: "مشروع فيديو سينمائي جديد - Google Drive 🎬",
-    description: "إنتاج ومونتاج فيديو مميز مضاف حديثاً بأعلى معايير الإضاءة والصوت والمؤثرات البصرية.",
+    title: "حين كانت القاهرة تتكلم 🏛️",
+    description: "فيديو وثائقي سينمائي مميز يستعرض تاريخ وسحر مدينة القاهرة بأسلوب إخراجي ومونتاج ساحر.",
     category: "showreel",
     type: "drive",
     driveUrl: "https://drive.google.com/file/d/1B9EZiVjc0REyzNVqe_h124RmPPT2xdDT/view?usp=drive_link",
@@ -18,7 +18,7 @@ const INITIAL_VIDEOS = [
     duration: "02:20",
     views: "جديد",
     date: "أغسطس 2026",
-    tags: ["GoogleDrive", "New", "مونتاج_سينمائي"],
+    tags: ["القاهرة", "وثائقي", "حين_كانت_القاهرة_تتكلم"],
     featured: true
   },
   {
