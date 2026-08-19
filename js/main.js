@@ -8,6 +8,20 @@
 // --------------------------------------------------------------------------
 const INITIAL_VIDEOS = [
   {
+    id: "v00000",
+    title: '"الوحش في القاهرة" - الجزء الأول 🏛️',
+    description: "فيديو سينمائي وتوثيقي مميز يستعرض قصة وإثارة مشروع 'الوحش في القاهرة' الجزء الأول.",
+    category: "showreel",
+    type: "drive",
+    driveUrl: "https://drive.google.com/file/d/1KKnMzIr4fzgSPWUPQTZWSMj-DHtS6kHR/view?usp=drive_link",
+    thumbnail: "",
+    duration: "02:40",
+    views: "جديد",
+    date: "أغسطس 2026",
+    tags: ["الوحش_في_القاهرة", "الجزء_الأول", "GoogleDrive", "مونتاج_سينمائي"],
+    featured: true
+  },
+  {
     id: "v0000",
     title: "إعلان شوكولاتة 🍫",
     description: "إعلان تجاري وترويجي جذاب لمنتج شوكولاتة فاخر بأسلوب مونتاج وإخراج سينمائي حديث.",
@@ -151,8 +165,8 @@ const INITIAL_VIDEOS = [
 
 const CATEGORIES = [
   { id: "all", label: "🔥 جميع الأعمال" },
-  { id: "commercial", label: "📺 إعلانات وتجارية" },
   { id: "showreel", label: "🎬 شو ريل (Showreels)" },
+  { id: "commercial", label: "📺 إعلانات وتجارية" },
   { id: "social", label: "📱 فيس بوك وسوشيال" },
   { id: "vlog", label: "📸 مشاريع سينمائية" },
   { id: "tutorials", label: "📜 فيديوهات تاريخية" }
