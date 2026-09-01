@@ -8,6 +8,20 @@
 // --------------------------------------------------------------------------
 const INITIAL_VIDEOS = [
   {
+    id: "v000000",
+    title: "ريل انستجرام 📸",
+    description: "فيديو مميز ومنشور على انستجرام بأسلوب مونتاج احترافي وديناميكي.",
+    category: "social",
+    type: "instagram",
+    driveUrl: "https://www.instagram.com/reel/Dcb9kKlNE0b/",
+    thumbnail: "",
+    duration: "00:30",
+    views: "جديد",
+    date: "سبتمبر 2026",
+    tags: ["انستجرام", "Reel", "Instagram"],
+    featured: true
+  },
+  {
     id: "v00000",
     title: '"الوحش في القاهرة" - الجزء الأول 🏛️',
     description: "فيديو سينمائي وتوثيقي مميز يستعرض قصة وإثارة مشروع 'الوحش في القاهرة' الجزء الأول.",
@@ -202,11 +216,20 @@ function isFacebookUrl(url) {
   return url.includes('facebook.com') || url.includes('fb.watch');
 }
 
+function isInstagramUrl(url) {
+  if (!url) return false;
+  return url.includes('instagram.com');
+}
+
 function getThumbnailUrl(rawUrl, customThumb) {
   if (customThumb) return customThumb;
 
   if (isFacebookUrl(rawUrl)) {
     return generatePlaceholderSvg('فيديو فيس بوك');
+  }
+
+  if (isInstagramUrl(rawUrl)) {
+    return generatePlaceholderSvg('ريل انستجرام');
   }
 
   const youtubeId = extractYouTubeId(rawUrl);
@@ -301,14 +324,19 @@ function renderVideos() {
 
   videoGrid.innerHTML = filtered.map(v => {
     const thumb = getThumbnailUrl(v.driveUrl, v.thumbnail);
-    const isDrive = v.type === 'drive' || extractDriveFileId(v.driveUrl);
+    const isDrive = v.type === 'drive' || (extractDriveFileId(v.driveUrl) && !isInstagramUrl(v.driveUrl));
     const isFb = v.type === 'facebook' || isFacebookUrl(v.driveUrl);
+    const isIg = v.type === 'instagram' || isInstagramUrl(v.driveUrl);
 
     let badgeClass = 'youtube';
     let badgeIcon = 'fa-brands fa-youtube';
     let badgeText = 'YouTube';
 
-    if (isFb) {
+    if (isIg) {
+      badgeClass = 'instagram';
+      badgeIcon = 'fa-brands fa-instagram';
+      badgeText = 'Instagram';
+    } else if (isFb) {
       badgeClass = 'facebook';
       badgeIcon = 'fa-brands fa-facebook';
       badgeText = 'Facebook';

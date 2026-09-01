@@ -663,6 +663,7 @@ body {
 .badge-source.drive { color: var(--accent-cyan); border-color: rgba(0, 242, 254, 0.3); }
 .badge-source.youtube { color: #ff0000; border-color: rgba(255, 0, 0, 0.3); }
 .badge-source.facebook { color: #1877f2; border-color: rgba(24, 119, 242, 0.4); }
+.badge-source.instagram { color: #e1306c; border-color: rgba(225, 48, 108, 0.4); }
 
 .badge-duration {
   padding: 0.25rem 0.65rem;
