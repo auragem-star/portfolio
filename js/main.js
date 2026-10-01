@@ -8,6 +8,20 @@
 // --------------------------------------------------------------------------
 const INITIAL_VIDEOS = [
   {
+    id: "v000000001",
+    title: "THE LAST UPDATE 🤖",
+    description: "فيديو AI سينمائي ملحمي من إخراج mahmoudsaeid — مواجهة الإنسان للآلة في عالم ما بعد الذكاء الاصطناعي. Directed by mahmoudsaeid.",
+    category: "showreel",
+    type: "youtube",
+    driveUrl: "https://youtu.be/TZFoNi-1qHY",
+    thumbnail: "./assets/last-update-poster.jpg",
+    duration: "02:30",
+    views: "جديد",
+    date: "أكتوبر 2026",
+    tags: ["AI_Video", "TheLastUpdate", "YouTube", "سينمائي"],
+    featured: true
+  },
+  {
     id: "v00000000",
     title: "جولة في التمانينات 🕰️",
     description: "جولة سينمائية وثائقية رائعة في أجواء مصر في حقبة الثمانينات، بمونتاج مميز وأسلوب إخراجي ساحر.",
