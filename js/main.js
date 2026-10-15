@@ -8,6 +8,20 @@
 // --------------------------------------------------------------------------
 const INITIAL_VIDEOS = [
   {
+    id: "v000000002",
+    title: "متصدقش كل اللي بتشوفه 👁️",
+    description: "فيديو سينمائي مميز وفكرة ملهمة عن العالم الرقمي والذكاء الاصطناعي وإدراك الحقيقة، بمونتاج احترافي ساحر.",
+    category: "social",
+    type: "facebook",
+    driveUrl: "https://www.facebook.com/share/r/19eAHh9nkX/",
+    thumbnail: "",
+    duration: "01:30",
+    views: "جديد",
+    date: "أكتوبر 2026",
+    tags: ["فيس_بوك", "متصدقش_كل_اللي_بتشوفه", "AI", "Facebook"],
+    featured: true
+  },
+  {
     id: "v000000001",
     title: "THE LAST UPDATE 🤖",
     description: "فيديو AI سينمائي ملحمي من إخراج mahmoudsaeid — مواجهة الإنسان للآلة في عالم ما بعد الذكاء الاصطناعي. Directed by mahmoudsaeid.",
